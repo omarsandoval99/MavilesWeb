@@ -7,7 +7,7 @@
     margin: 0;
   }
   
-  div > img {
+  div > img, div > video {
     display: block;
     position: absolute;
     top: 50%;
