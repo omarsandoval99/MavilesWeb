@@ -22,67 +22,83 @@
             <p>
             <h4>Cuestionario</h4>
             </p>
-
+            <form action="/encapsulamientoyabstraccionForm.html">
             <a class="h6">¿Que es Encapsulamiento?</a>
-            <input class="form-control mt-0 mb-3" type="text" id="Pregunta1" required size="50">
+            <input class="form-control mt-0 mb-3" style="max-width: 75%;" type="text" id="Pregunta1" required
+                placeholder="Encapsulamiento se trata de...">
 
-            <a class="h6">¿Que es un objeto?</a>
-            <input class="form-control mt-0 mb-3" type="text" id="Pregunta2" required size="50">
+            <a class="h6">¿Qué es un objeto?</a>
+            <input class="form-control mt-0 mb-3" style="max-width: 75%;" type="text" id="Pregunta2" required
+                placeholder="¿Qué es un objeto dentro de los paradigmas de programación?">
 
-            <a class="h6">Selecciona los 2 tipos de encapsulamiento</a>
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <a class="h6">Selecciona algún tipo de encapsulamiento</a>
+            <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" name="radio1" id="customCheck1" checked>
                 <label class="custom-control-label" for="customCheck1">De datos</label>
             </div>
             <div class="custom-control custom-radio">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Externo</label>
+                <input type="radio" class="custom-control-input" name="radio1" id="customCheck2">
+                <label class="custom-control-label" for="customCheck2">Externo</label>
             </div>
             <div class="custom-control custom-radio">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Interno</label>
+                <input type="radio" class="custom-control-input" name="radio1" id="customCheck3">
+                <label class="custom-control-label" for="customCheck3">Interno</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" name="radio1" id="customCheck9">
+                <label class="custom-control-label" for="customCheck9">De control</label>
             </div>
             <div class="custom-control custom-radio mt-0 mb-3">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">De control</label>
+                <input type="radio" class="custom-control-input" name="radio1" id="customCheck4">
+                <label class="custom-control-label" for="customCheck4">Ninguna de las anteriores</label>
             </div>
 
-            <a class="h6">Menciona algunas ventajas del Encapsulamiento:</a>
-            <input class="form-control mt-0 mb-3" type="text" id="Pregunta4" required size="50">
+            <a class="h6">Menciona ventajas del Encapsulamiento:</a>
+            <input class="form-control mt-0 mb-3" style="max-width: 75%;" type="text" id="Pregunta4" required
+                placeholder="Puede ser una o algunas... ">
 
-            <a class="h6">¿Cuántos tipos de abstracción existen?</a>
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">De datos</label>
+            <a class="h6">Selecciona algún tipo de abstracción</a>
+            <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" name="radio2" id="customCheck5" checked>
+                <label class="custom-control-label" for="customCheck5">De datos</label>
             </div>
             <div class="custom-control custom-radio">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Externo</label>
+                <input type="radio" class="custom-control-input" name="radio2" id="customCheck6">
+                <label class="custom-control-label" for="customCheck6">Externo</label>
             </div>
             <div class="custom-control custom-radio">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Interno</label>
+                <input type="radio" class="custom-control-input" name="radio2" id="customCheck7">
+                <label class="custom-control-label" for="customCheck7">Interno</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" class="custom-control-input" name="radio2" id="customCheck10">
+                <label class="custom-control-label" for="customCheck10">De control</label>
             </div>
             <div class="custom-control custom-radio mt-0 mb-3">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">De control</label>
+                <input type="radio" class="custom-control-input" name="radio2" id="customCheck8">
+                <label class="custom-control-label" for="customCheck8">Ninguna de las anteriores</label>
             </div>
 
 
             <a class="h6">¿Que permite la abstracción?</a>
-            <input class="form-control mt-0 mb-3" type="text" id="Pregunta6" required size="50">
+            <input class="form-control mt-0 mb-3" style="max-width: 75%;" type="text" id="Pregunta6" required
+                placeholder="Herramientas a las que da lugar o usos que se le dan...">
 
             <a class="h6">¿En qué consiste la abstracción?</a>
-            <input class="form-control mt-0 mb-3" type="text" id="Pregunta7" required size="50">
+            <input class="form-control mt-0 mb-3" style="max-width: 75%;" type="text" id="Pregunta7" required
+                placeholder="Abstracción se trata de...">
 
             <a class="h6">¿En que consiste la abstracción de datos?</a>
-            <input class="form-control mt-0 mb-3" type="text" id="Pregunta8" required size="50">
+            <input class="form-control mt-0 mb-3" style="max-width: 75%;" type="text" id="Pregunta8" required
+                placeholder="Abstracción respecto a los datos...">
 
             <a class="h6">¿En que consiste la abstracción de control? </a>
-            <input class="form-control mt-0 mb-3" type="text" id="Pregunta9" required size="50">
+            <input class="form-control mt-0 mb-3" style="max-width: 75%;" type="text" id="Pregunta9" required
+                placeholder="¿Cómo se diferencia con la abstracción de datos?">
 
 
-            <button type="button" class="btn btn-primary"><a href="avances.html" style="text-decoration: none; color: rgb(255, 255, 255);">Enviar</a> </button>
+            <input type="submit" class="btn btn-primary" value="Enviar">
+            </form>
         </div>
         
     </main>

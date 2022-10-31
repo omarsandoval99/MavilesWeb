@@ -20,42 +20,47 @@
         <div style="text-align: justify;">
 
             <p><h4>Cuestionario</h4></p>
-
+            <form action="polimorfismoForm.html">
             <a class="h6">¿Que es polimorfismo?</a>
-            <select class="form-control mt-0 mb-3" name="Pregunta1">
+            <select class="form-control mt-0 mb-3" style="max-width: 75%;" name="Pregunta1" required>
+                <option value="" selected> Selecciona una opción...</option>
                 <option value="Resp1">Sobre carga de parámetros.</option>
-                <option value="Resp2" >ocurre cuando las funciones del mismo nombre existen, con funcionalidad similar.</option>
-                <option value="Resp3"selected>Polimorfismo de sobrecarga, parametrico, subtipado. </option>
+                <option value="Resp2" >Ocurre cuando las funciones del mismo nombre existen, con funcionalidad similar.</option>
+                <option value="Resp3">Polimorfismo de sobrecarga, parametrico, subtipado. </option>
                 <option value="Resp4">Es una misma operación puede tener diferente comportamiento en diferentes objetos. </option>
               </select>
 
             <a class="h6">clases de polimorfismo</a>
-            <select class="form-control mt-0 mb-3" name="Pregunta2">
-                <option value="Resp1"selected>Sobre carga de parámetros.</option>
-                <option value="Resp2" >ocurre cuando las funciones del mismo nombre existen, con funcionalidad similar.</option>
+            <select class="form-control mt-0 mb-3" style="max-width: 75%;" name="Pregunta2" required>
+              <option value="" selected> Selecciona una opción...</option>
+                <option value="Resp1">Sobre carga de parámetros.</option>
+                <option value="Resp2" >Ocurre cuando las funciones del mismo nombre existen, con funcionalidad similar.</option>
                 <option value="Resp3">Polimorfismo de sobrecarga, parametrico, subtipado. </option>
                 <option value="Resp4">Es una misma operación puede tener diferente comportamiento en diferentes objetos. </option>
               </select>
 
             <a class="h6">¿Cuándo ocurre el polimorfismo de sobrecarga?</a>
-            <select class="form-control mt-0 mb-3" name="Pregunta3">
+            <select class="form-control mt-0 mb-3" style="max-width: 75%;" name="Pregunta3" required>
+              <option value="" selected> Selecciona una opción...</option>
                 <option value="Resp1">Sobre carga de parámetros.</option>
-                <option value="Resp2" >ocurre cuando las funciones del mismo nombre existen, con funcionalidad similar.</option>
-                <option value="Resp3">Polimorfismo de sobrecarga, parametrico, subtipado. </option>
-                <option value="Resp4"selected>Es una misma operación puede tener diferente comportamiento en diferentes objetos. </option>
-              </select>
-
-            <a class="h6">¿De que otro nombre es conocido el polimorfismo?</a>
-            <select class="form-control mt-0 mb-3" name="Pregunta4">
-                <option value="Resp1">Sobre carga de parámetros.</option>
-                <option value="Resp2" selected>ocurre cuando las funciones del mismo nombre existen, con funcionalidad similar.</option>
+                <option value="Resp2" >Ocurre cuando las funciones del mismo nombre existen, con funcionalidad similar.</option>
                 <option value="Resp3">Polimorfismo de sobrecarga, parametrico, subtipado. </option>
                 <option value="Resp4">Es una misma operación puede tener diferente comportamiento en diferentes objetos. </option>
               </select>
 
-       
+            <a class="h6">¿De que otro nombre es conocido el polimorfismo?</a>
+            <select class="form-control mt-0 mb-3" style="max-width: 75%;" name="Pregunta4" required>
+              <option value="" selected> Selecciona una opción...</option>
+                <option value="Resp1">Sobre carga de parámetros.</option>
+                <option value="Resp2">Ocurre cuando las funciones del mismo nombre existen, con funcionalidad similar.</option>
+                <option value="Resp3">Polimorfismo de sobrecarga, parametrico, subtipado. </option>
+                <option value="Resp4">Es una misma operación puede tener diferente comportamiento en diferentes objetos. </option>
+              </select>
+
+              <input type="submit" class="btn btn-primary" value="Enviar"/>
+            </form>
         </div>
-        <button type="button" class="btn btn-primary"><a href="avances.html" style="text-decoration: none; color: rgb(255, 255, 255);">Enviar</a> </button>
+        
     </main>
     <a type="button" class="btn btn-dark sticky-btn-right-left text-white" href="./avances.html">Volver al menú</a>
 </body>
