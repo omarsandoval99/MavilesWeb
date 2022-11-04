@@ -163,6 +163,33 @@
                     </div>
                 </div>
             </div>
+            <div class="modal fade" id="modalChat" tabindex="-1" role="dialog" aria-labelledby="modalChatLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalChatLabel">Chat</h5>
+                        
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="wrapper" id="msj-contenedor">
+                           <div class="msg-container left">
+                                <p class="msg ">Estamos buscando un asesor, porfavor deja tu duda y en un momento te responderemos.</p>
+                              </div>
+                            
+                        </div>
+                    
+                    </div>
+                    <div class="modal-footer">
+                      <input type="text" class="form-control" placeholder="Mensaje..." id="msj-chat"/>
+                      <button type="button" class="btn btn-primary" onclick="enviarMensaje();">Enviar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <a type="button" class="btn btn-circle btn-primary sticky-btn-right-left text-white" data-target="#modalChat" data-toggle="modal"><i class="fa fa-comments"></i></a>
         </main>
     </div>
     <div class="footer-basic">
@@ -172,6 +199,7 @@
             <p class="copyright">Tecnológico Nacional de México Campus Los Mochis © 2022</p>
         </footer>
     </div>
+ 
 </body>
 
 
@@ -185,4 +213,14 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
     
+    <script>
+        function enviarMensaje(){
+            var mensjae = $('#msj-chat').val();
+            var contenedor = `<div class="msg-container right">
+                                <p class="msg ">${mensjae}</p>
+                              </div>`;
+            $('#msj-contenedor').append(contenedor);
+            $('#msj-chat').val('');
+        }
+    </script>
 </html>
